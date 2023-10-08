@@ -42,13 +42,89 @@
             <div class="menu-item__last">
               <p class="menu-text">Ежедневно с 9:00 до 20:00</p>
               <li>
-                <a href="#" class="menu-phone">8 (747) 812 00 70</a>
+                <a href="tel:+77478120070" class="menu-phone"
+                  >8 (747) 812 00 70</a
+                >
               </li>
             </div>
           </div>
         </ul>
       </div>
+      <div class="burger-menu">
+        <div class="burger">
+          <span></span>
+        </div>
 
+        <nav>
+          <ul class="main">
+            <li><a href="#0">kseytov@gmail.com</a></li>
+            <li><a href="#0">Forum, Event-Space</a></li>
+            <li><a href="#0">Ежедневно с 9:00 до 20:00</a></li>
+            <li><a href="tel:+77478120070">8 (747) 812 00 70</a></li>
+          </ul>
+
+          <div class="social">
+            <div>
+              <img src="./img/google.png" alt="google" />
+            </div>
+            <div>
+              <img src="./img/telegram.png" alt="telegram" />
+            </div>
+          </div>
+
+          <ul class="sub">
+            <li><a href="#0">Сейтов Канат</a></li>
+          </ul>
+        </nav>
+
+        <div class="overlay"></div>
+      </div>
+
+      <div id="modal" class="modal-container">
+        <div class="box">
+          <h3>Орын брондау</h3>
+          <form action="/" method="POST">
+            <input
+              type="text"
+              name="name"
+              class="input"
+              placeholder="Аты, тегі"
+            />
+            <input
+              type="text"
+              name="phone"
+              class="input"
+              placeholder="+7 999 999-99-99"
+            />
+            <input
+              type="text"
+              name="email"
+              class="input"
+              placeholder="Сіздің поштаңыз"
+            />
+            <input
+              type="text"
+              name="company"
+              class="input"
+              placeholder="Компания"
+            />
+            <input
+              type="text"
+              name="profession"
+              class="input"
+              placeholder="Жұмыстағы міндетіңіз"
+            />
+            <input type="text" name="city" class="input" placeholder="Кала" />
+            <input
+              type="text"
+              name="direction"
+              class="input"
+              placeholder="Жұмыс саласы"
+            />
+            <button type="submit" class="form-btn">Жіберу</button>
+          </form>
+        </div>
+      </div>
       <header class="header">
         <div class="header-start">
           <h1>Алматы қаласындағы алғашқы IT форум</h1>
@@ -57,9 +133,11 @@
             білім,<br />
             тәжірибе және идеялар алмасу.
           </p>
-          <button type="button" class="btn">Орын брондау</button>
+          <button type="button" class="btn" id="active-modal">
+            Орын брондау
+          </button>
         </div>
-        <div>
+        <div class="header-picture">
           <img src="/img/bools.png" alt="bools" />
         </div>
       </header>
@@ -115,7 +193,7 @@
 
       <section class="section-4">
         <h3>График и программа</h3>
-        <div class="flex justify-between items-start">
+        <div class="flex justify-between items-start section-4__inner">
           <div>
             <p>9:00-10:00 - Регистрация</p>
             <p>10:00-10:20 - Приветствие, начало форума и контеста</p>
@@ -154,8 +232,114 @@
           </div>
         </div>
       </section>
-    </div>
 
+      <section class="section-5">
+        <h3>Спикерлер туралы ақпарат</h3>
+
+        <div class="cards-list">
+          <div class="card">
+            <div class="card-picture">
+              <img src="./img/card-placeholder.png" alt="" />
+            </div>
+            <h4>Алина Ачилова</h4>
+            <p>
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-picture">
+              <img src="./img/card-placeholder.png" alt="" />
+            </div>
+            <h4>Алина Ачилова</h4>
+            <p>
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-picture">
+              <img src="./img/card-placeholder.png" alt="" />
+            </div>
+            <h4>Алина Ачилова</h4>
+            <p>
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-picture">
+              <img src="./img/card-placeholder.png" alt="" />
+            </div>
+            <h4>Алина Ачилова</h4>
+            <p>
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-picture">
+              <img src="./img/card-placeholder.png" alt="" />
+            </div>
+            <h4>Алина Ачилова</h4>
+            <p>
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-picture">
+              <img src="./img/card-placeholder.png" alt="" />
+            </div>
+            <h4>Алина Ачилова</h4>
+            <p>
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+
+        <button class="btn" type="button">Орын брондау</button>
+      </section>
+
+      <div class="section-6">
+        <h3>Серіктестер мен демеушілер</h3>
+        <div class="partners-list">
+          <div><img src="./img/partner.png" alt="partner" /></div>
+          <div><img src="./img/partner.png" alt="partner" /></div>
+          <div><img src="./img/partner.png" alt="partner" /></div>
+          <div><img src="./img/partner.png" alt="partner" /></div>
+          <div><img src="./img/partner.png" alt="partner" /></div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <h3>Байланыс ақпараты</h3>
+
+      <p>Сейтов Канат</p>
+      <a href="tel:+77478120070">+7 (747) 812 00 70</a>
+      <div class="social">
+        <div>
+          <a href="#"> <img src="./img/google.png" alt="google" /></a>
+        </div>
+        <div>
+          <a href="#"> <img src="./img/telegram.png" alt="telegram" /></a>
+        </div>
+      </div>
+    </footer>
     <script src="app.js"></script>
   </body>
 </html>
