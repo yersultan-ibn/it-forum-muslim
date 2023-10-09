@@ -15,6 +15,51 @@
   </head>
 
   <body>
+    <div id="modal" class="modal-container">
+      <div class="box">
+        <h3>Орын брондау</h3>
+        <form action="/" method="POST">
+          <input
+            type="text"
+            name="name"
+            class="input"
+            placeholder="Аты, тегі"
+          />
+          <input
+            type="text"
+            name="phone"
+            class="input"
+            placeholder="+7 999 999-99-99"
+          />
+          <input
+            type="text"
+            name="email"
+            class="input"
+            placeholder="Сіздің поштаңыз"
+          />
+          <input
+            type="text"
+            name="company"
+            class="input"
+            placeholder="Компания"
+          />
+          <input
+            type="text"
+            name="profession"
+            class="input"
+            placeholder="Жұмыстағы міндетіңіз"
+          />
+          <input type="text" name="city" class="input" placeholder="Кала" />
+          <input
+            type="text"
+            name="direction"
+            class="input"
+            placeholder="Жұмыс саласы"
+          />
+          <button type="submit" class="form-btn">Жіберу</button>
+        </form>
+      </div>
+    </div>
     <div class="container">
       <div class="navbar">
         <div class="navbar-logo"><img src="/img/logo.png" alt="logo" /></div>
@@ -57,7 +102,9 @@
             білім,<br />
             тәжірибе және идеялар алмасу.
           </p>
-          <button type="button" class="btn">Орын брондау</button>
+          <button type="button" id="active-modal" class="btn">
+            Орын брондау
+          </button>
         </div>
         <div>
           <img src="/img/bools.png" alt="bools" />
@@ -156,6 +203,6 @@
       </section>
     </div>
 
-    <script src="app.js"></script>
+    <script src="/app.js"></script>
   </body>
 </html>
