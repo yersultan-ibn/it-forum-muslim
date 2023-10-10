@@ -341,7 +341,7 @@ h1 {
   margin: 0 auto;
 
   position: fixed;
-  top: 10%;
+  top: 0%;
   left: 0;
   right: 0;
   z-index: 2000;
@@ -398,8 +398,6 @@ h1 {
 .hidden {
   overflow: hidden;
 }
-
-
 
 /* media */
 @media (max-width: 1048px) {
