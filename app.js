@@ -4,9 +4,10 @@ window.addEventListener("click", (e) => {
   console.log(e.target);
   if (e.target === active) {
     modal.classList.add("display");
+    document.body.classList.add("hidden");
   }
   if (e.target === modal) {
     modal.classList.remove("display");
-    document.body.classList.add("hidden");
+    document.body.classList.remove("hidden");
   }
 });
