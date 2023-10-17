@@ -355,12 +355,11 @@ h1 {
 
 .modal-container h3 {
   color: #000;
-  margin-bottom: 27px;
 }
 
 .box {
   color: #242424;
-  padding: 40px;
+  padding: 20px;
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
@@ -370,6 +369,7 @@ h1 {
   border-radius: 20px;
 
   height: -webkit-fill-available;
+  max-height: 760px;
   margin: 10px;
   overflow-y: auto;
 }
@@ -379,9 +379,10 @@ h1 {
   background: #f1f1f1;
   padding: 15px 16px;
   align-items: center;
-  width: 95%;
   font-size: 20px;
   margin-bottom: 30px;
+  box-sizing: border-box;
+  width: 100%;
 }
 .form-btn {
   background: #0221b5;
@@ -400,6 +401,9 @@ h1 {
   border-radius: 10px;
   cursor: pointer;
   margin-top: 20px;
+  border: none;
+
+  box-shadow: 2px 1px 7px rgb(0 0 0 / 30%);
 }
 .hidden {
   overflow: hidden;
@@ -613,13 +617,17 @@ h1 {
 }
 
 #close-modal-btn{
-  position: absolute;
-  right: 24px;
-  top: 15px;
   font-size: 45px;
   cursor: pointer;
+  user-select: none;
 }
 
 #close-modal-btn:hover{
   transform: scale(1.1);
+}
+
+.modal-title-box{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 27px;
 }
