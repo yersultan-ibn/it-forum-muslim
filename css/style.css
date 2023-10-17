@@ -344,28 +344,34 @@ h1 {
   top: 0%;
   left: 0;
   right: 0;
+  bottom: 0;
   z-index: 2000;
 
   text-align: center;
-  font-size: 36px;
+  font-size: 26px;
   font-weight: 500;
   line-height: 152%;
 }
 
 .modal-container h3 {
   color: #000;
-  margin-bottom: 57px;
+  margin-bottom: 27px;
 }
 
 .box {
   color: #242424;
   padding: 40px;
-  width: 600px;
+  width: 100%;
+  max-width: 600px;
   margin: 0 auto;
   background-color: #f1f1f1;
   text-align: center;
   position: relative;
   border-radius: 20px;
+
+  height: -webkit-fill-available;
+  margin: 10px;
+  overflow-y: auto;
 }
 .input {
   border-radius: 12px;
@@ -604,4 +610,16 @@ h1 {
     font-size: 20px;
     margin-top: 10px;
   }
+}
+
+#close-modal-btn{
+  position: absolute;
+  right: 24px;
+  top: 15px;
+  font-size: 45px;
+  cursor: pointer;
+}
+
+#close-modal-btn:hover{
+  transform: scale(1.1);
 }
