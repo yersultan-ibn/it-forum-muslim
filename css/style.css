@@ -152,10 +152,16 @@ p {
 .navbar {
   display: flex;
 
-  padding-top: 83px;
+  padding-top: 40px;
+  padding-bottom: 20px;
   color: #fff;
+  background: #020d45;
   display: flex;
   justify-content: space-between;
+
+  position: sticky;
+  top: 0;
+
 }
 .menu-list {
   display: flex;
@@ -566,6 +572,10 @@ h1 {
 }
 
 @media (max-width: 480px) {
+  .navbar{
+    position: relative;
+    padding-bottom: 0;
+  }
   .container {
     padding: 0 20px;
   }
